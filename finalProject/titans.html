@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Titans - Greek Mythology</title>
+    <meta name="description"
+        content="Explore the Titans and related figures from Greek mythology, including Cronus, Rhea, Atlas, Prometheus, and more.">
+    <meta property="og:title" content="The Titans - Greek Mythology">
+    <meta property="og:description"
+        content="Discover the elder gods and their kin: Asteria, Astraeus, Atlas, Clymene, Coeus, Crius, Cronus, Dione, Eos, Epimetheus, Eurybia, Eurynome, Hyperion, Iapetus, Lelantos, Leto, Menoetius, Metis, Mnemosyne, Oceanus, Ophion, Pallas, Perses, Phoebe, Prometheus, Rhea, Selene, Styx, Tethys, Thea, and Themis.">
+    <meta property="og:image" content="assets/images/titans-og.jpg">
+    <meta property="og:url" content="YOUR_WEBSITE_URL/titans.html">
+    <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="Enchanted Realm Logo" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="olympians.html">Olympians</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="titans.html">Titans</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="gods.html">Greek Gods</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="artifacts.html">Artifacts</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content titans-page">
+        <div class="container">
+            <h1 class="page-title text-center display-4 mb-4">The Titans and Their Kin</h1>
+            <p class="lead text-center mb-5 page-intro">Meet the elder gods and their descendants who shaped the cosmos
+                in Greek mythology. Click on a figure to learn more.</p>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 col-md-10">
+                    <form class="search-form" role="search" id="titanSearchForm">
+                        <div class="input-group">
+                            <input type="search" class="form-control search-input" placeholder="Search for a Titan..."
+                                aria-label="Search Titans" id="titanSearchInput">
+                            <button class="btn btn-outline-light search-button" type="submit">Search</button>
+                        </div>
+                    </form>
+                    <div id="titanSearchFeedback" class="text-center small text-muted mt-2" style="display: none;">No
+                        results found.</div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center" id="titanGrid">
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Asteria">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanAsteriaModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Asteria-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Asteria">
+                        <div class="card-body">
+                            <h5 class="card-title">Asteria</h5>
+                            <p class="card-text small">Titaness of Falling Stars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Astraeus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanAstraeusModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Astraeus-Greek-Titan-God-Of-Dusk-Stars-And-Astrology-In-Celestial-Scene.webp"
+                            class="card-img-top" alt="Astraeus">
+                        <div class="card-body">
+                            <h5 class="card-title">Astraeus</h5>
+                            <p class="card-text small">Titan of Dusk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Atlas">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanAtlasModal">
+                        <img src="https://i.pinimg.com/736x/cf/90/29/cf90296ba5806e5d3ac57ce08715796f.jpg"
+                            class="card-img-top" alt="Atlas">
+                        <div class="card-body">
+                            <h5 class="card-title">Atlas</h5>
+                            <p class="card-text small">Titan of Endurance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Clymene">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanClymeneModal">
+                        <img src="https://i1.wp.com/greek.mythologyworldwide.com/wp-content/uploads/2024/09/greek.mythologyworldwide.com-The-Titaness-Clymene-The-Oceanid-and-Her-Legacy.webp?w=1024&resize=1024,1024&ssl=1"
+                            class="card-img-top" alt="Clymene">
+                        <div class="card-body">
+                            <h5 class="card-title">Clymene</h5>
+                            <p class="card-text small">Titaness of Fame</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Coeus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanCoeusModal">
+                        <img src="https://i.pinimg.com/736x/42/83/c9/4283c92238faf08e1ca42964e9cf7b2c.jpg"
+                            class="card-img-top" alt="Coeus">
+                        <div class="card-body">
+                            <h5 class="card-title">Coeus</h5>
+                            <p class="card-text small">Titan of Intelligence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Crius">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanCriusModal">
+                        <img src="https://i.pinimg.com/736x/2f/04/c0/2f04c0984f91b548f8318354068e22e1.jpg"
+                            class="card-img-top" alt="Crius">
+                        <div class="card-body">
+                            <h5 class="card-title">Crius</h5>
+                            <p class="card-text small">Titan of Constellations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Cronus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanCronusModal">
+                        <img src="https://i.pinimg.com/736x/89/24/bc/8924bcdf6c9734a961ef956a8e8fbf79.jpg"
+                            class="card-img-top" alt="Cronus">
+                        <div class="card-body">
+                            <h5 class="card-title">Cronus</h5>
+                            <p class="card-text small">Leader of the Titans</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Dione">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanDioneModal">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2db7af60-2afe-4d2a-8c82-11c7d2c25ab6/dgpf8v4-0800dc3c-4737-4ac7-996f-abcad276ced6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJkYjdhZjYwLTJhZmUtNGQyYS04YzgyLTExYzdkMmMyNWFiNlwvZGdwZjh2NC0wODAwZGMzYy00NzM3LTRhYzctOTk2Zi1hYmNhZDI3NmNlZDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0rIA4zwsrtri6AHr3WfAmlxjtkmFdWC-b2iCyVwLsXI"
+                            class="card-img-top" alt="Dione">
+                        <div class="card-body">
+                            <h5 class="card-title">Dione</h5>
+                            <p class="card-text small">Titaness of Oracles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Eos">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanEosModal">
+                        <img src="https://i.pinimg.com/736x/6b/bc/73/6bbc73adaab3996f74aacaca7f664e90.jpg"
+                            class="card-img-top" alt="Eos">
+                        <div class="card-body">
+                            <h5 class="card-title">Eos</h5>
+                            <p class="card-text small">Titaness of Dawn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Epimetheus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanEpimetheusModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Epimetheus-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Epimetheus">
+                        <div class="card-body">
+                            <h5 class="card-title">Epimetheus</h5>
+                            <p class="card-text small">Titan of Afterthought</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Eurybia">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanEurybiaModal">
+                        <img src="https://i2.wp.com/greek.mythologyworldwide.com/wp-content/uploads/2024/09/greek.mythologyworldwide.com-The-Titaness-Eurybia-Goddess-of-the-Seas-Mastery.webp?w=1024&resize=1024,1024&ssl=1"
+                            class="card-img-top" alt="Eurybia">
+                        <div class="card-body">
+                            <h5 class="card-title">Eurybia</h5>
+                            <p class="card-text small">Titaness of Sea Mastery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Eurynome">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanEurynomeModal">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2db7af60-2afe-4d2a-8c82-11c7d2c25ab6/dgpsj9j-635bebb8-1c90-43ce-9f80-09c5491ee2b1.jpg/v1/fit/w_617,h_1080,q_70,strp/eurynome_by_weiyi1995_dgpsj9j-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzJkYjdhZjYwLTJhZmUtNGQyYS04YzgyLTExYzdkMmMyNWFiNlwvZGdwc2o5ai02MzViZWJiOC0xYzkwLTQzY2UtOWY4MC0wOWM1NDkxZWUyYjEuanBnIiwid2lkdGgiOiI8PTYxNyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.wT35rX3jrTGmrsvY0-dbCwx83J-Ow1dWZrO66GSwc4Y"
+                            class="card-img-top" alt="Eurynome">
+                        <div class="card-body">
+                            <h5 class="card-title">Eurynome</h5>
+                            <p class="card-text small">Titaness of Pastures</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Hyperion">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanHyperionModal">
+                        <img src="https://i.pinimg.com/736x/02/d7/ee/02d7ee752a962a4d20296220d912347d.jpg"
+                            class="card-img-top" alt="Hyperion">
+                        <div class="card-body">
+                            <h5 class="card-title">Hyperion</h5>
+                            <p class="card-text small">Titan of Light</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Iapetus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanIapetusModal">
+                        <img src="https://i.pinimg.com/736x/00/c6/b5/00c6b5031acb5d1f0c5803df57e471bc.jpg"
+                            class="card-img-top" alt="Iapetus">
+                        <div class="card-body">
+                            <h5 class="card-title">Iapetus</h5>
+                            <p class="card-text small">Titan of Mortality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Lelantos">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanLelantosModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Lelantos-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Lelantos">
+                        <div class="card-body">
+                            <h5 class="card-title">Lelantos</h5>
+                            <p class="card-text small">Titan of Air</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Leto">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanLetoModal">
+                        <img src="https://i.pinimg.com/736x/c4/41/85/c44185e529b2e5f45ea33b69800c2bbd.jpg"
+                            class="card-img-top" alt="Leto">
+                        <div class="card-body">
+                            <h5 class="card-title">Leto</h5>
+                            <p class="card-text small">Titaness of Motherhood</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Menoetius">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanMenoetiusModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Menoetius-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Menoetius">
+                        <div class="card-body">
+                            <h5 class="card-title">Menoetius</h5>
+                            <p class="card-text small">Titan of Rage</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Metis">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanMetisModal">
+                        <img src="https://i.pinimg.com/736x/c1/b8/17/c1b817e2f70ed99baa0e8faf605171c0.jpg"
+                            class="card-img-top" alt="Metis">
+                        <div class="card-body">
+                            <h5 class="card-title">Metis</h5>
+                            <p class="card-text small">Titaness of Wisdom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Mnemosyne">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanMnemosyneModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Mnemosyne-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Mnemosyne">
+                        <div class="card-body">
+                            <h5 class="card-title">Mnemosyne</h5>
+                            <p class="card-text small">Titaness of Memory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Oceanus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanOceanusModal">
+                        <img src="https://i.pinimg.com/736x/bc/0b/f6/bc0bf654470768647f7b4cb8a27ec3d0.jpg"
+                            class="card-img-top" alt="Oceanus">
+                        <div class="card-body">
+                            <h5 class="card-title">Oceanus</h5>
+                            <p class="card-text small">Titan of the Ocean</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Ophion">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanOphionModal">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d26a519-f4a9-4786-aee3-512857c0481b/dj4yl8f-5e65ee28-c9da-45c9-9f39-ca1402964c7c.png/v1/fill/w_1280,h_854,q_80,strp/ophion_the_serpent_god_by_saralgam1980_dj4yl8f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkMjZhNTE5LWY0YTktNDc4Ni1hZWUzLTUxMjg1N2MwNDgxYlwvZGo0eWw4Zi01ZTY1ZWUyOC1jOWRhLTQ1YzktOWYzOS1jYTE0MDI5NjRjN2MucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8zZDI2YTUxOS1mNGE5LTQ3ODYtYWVlMy01MTI4NTdjMDQ4MWJcL3NhcmFsZ2FtMTk4MC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.8XGhhGKkb6_q7tcf6IvLJiGxCIKjU1kKvzSTHLVAZS0"
+                            class="card-img-top" alt="Ophion">
+                        <div class="card-body">
+                            <h5 class="card-title">Ophion</h5>
+                            <p class="card-text small">Titan of Serpents</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Pallas">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanPallasModal">
+                        <img src="https://i.pinimg.com/736x/c6/94/4f/c6944f178fe5bb0378546931afc0bfae.jpg"
+                            class="card-img-top" alt="Pallas">
+                        <div class="card-body">
+                            <h5 class="card-title">Pallas</h5>
+                            <p class="card-text small">Titan of Warfare</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Perses">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanPersesModal">
+                        <img src="https://i.pinimg.com/736x/8b/5c/7f/8b5c7f62a475d821eccde71872729bfb.jpg"
+                            class="card-img-top" alt="Perses">
+                        <div class="card-body">
+                            <h5 class="card-title">Perses</h5>
+                            <p class="card-text small">Titan of Destruction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Phoebe">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanPhoebeModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Phoebe-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Phoebe">
+                        <div class="card-body">
+                            <h5 class="card-title">Phoebe</h5>
+                            <p class="card-text small">Titaness of Prophecy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Prometheus">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanPrometheusModal">
+                        <img src="https://i.pinimg.com/736x/f3/ec/94/f3ec945f7467c1adb7030b6f369174d4.jpg"
+                            class="card-img-top" alt="Prometheus">
+                        <div class="card-body">
+                            <h5 class="card-title">Prometheus</h5>
+                            <p class="card-text small">Titan of Forethought</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Rhea">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanRheaModal">
+                        <img src="https://i.pinimg.com/736x/89/c8/89/89c889b7f7660ae0772118f0978e3d90.jpg"
+                            class="card-img-top" alt="Rhea">
+                        <div class="card-body">
+                            <h5 class="card-title">Rhea</h5>
+                            <p class="card-text small">Titaness of Fertility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Selene">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanSeleneModal">
+                        <img src="https://i.pinimg.com/736x/30/3a/86/303a86a16663ada63e3ee120dfedd546.jpg"
+                            class="card-img-top" alt="Selene">
+                        <div class="card-body">
+                            <h5 class="card-title">Selene</h5>
+                            <p class="card-text small">Titaness of the Moon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Styx">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanStyxModal">
+                        <img src="https://www.greekmythology.com/images/mythology/styx_image_157.jpg"
+                            class="card-img-top" alt="Styx">
+                        <div class="card-body">
+                            <h5 class="card-title">Styx</h5>
+                            <p class="card-text small">Titaness of Oaths</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Tethys">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanTethysModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Tethys-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Tethys">
+                        <div class="card-body">
+                            <h5 class="card-title">Tethys</h5>
+                            <p class="card-text small">Titaness of Fresh Water</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Thea">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanTheaModal">
+                        <img src="https://i.pinimg.com/736x/76/95/da/7695da5d1e351655a596a07e5a67b328.jpg"
+                            class="card-img-top" alt="Thea">
+                        <div class="card-body">
+                            <h5 class="card-title">Thea</h5>
+                            <p class="card-text small">Titaness of Sight</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 titan-grid-item" data-name="Themis">
+                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#titanThemisModal">
+                        <img src="https://mysteryinhistory.com/wp-content/uploads/Themis-Greek-Titans-Full-List.webp"
+                            class="card-img-top" alt="Themis">
+                        <div class="card-body">
+                            <h5 class="card-title">Themis</h5>
+                            <p class="card-text small">Titaness of Divine Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="titanAsteriaModal" tabindex="-1" aria-labelledby="titanAsteriaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanAsteriaModalLabel">Asteria</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Asteria-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Asteria">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Falling Stars</h6>
+                            <p>Asteria was the daughter of Coeus and Phoebe, associated with falling stars and nocturnal
+                                oracles. She transformed into the island of Delos to escape Zeus.</p>
+                            <p><strong>Symbols:</strong> Stars, night</p>
+                            <p><strong>Family:</strong> Daughter of Coeus and Phoebe; mother of Hecate with Perses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanAstraeusModal" tabindex="-1" aria-labelledby="titanAstraeusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanAstraeusModalLabel">Astraeus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Astraeus-Greek-Titan-God-Of-Dusk-Stars-And-Astrology-In-Celestial-Scene.webp"
+                                class="img-fluid rounded mb-3" alt="Astraeus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Dusk</h6>
+                            <p>Astraeus, son of Crius and Eurybia, was the Titan of dusk and father of the winds and
+                                stars with Eos.</p>
+                            <p><strong>Symbols:</strong> Twilight, stars</p>
+                            <p><strong>Family:</strong> Son of Crius and Eurybia; husband of Eos; father of the Anemoi
+                                and Astraea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanAtlasModal" tabindex="-1" aria-labelledby="titanAtlasModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanAtlasModalLabel">Atlas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/cf/90/29/cf90296ba5806e5d3ac57ce08715796f.jpg"
+                                class="img-fluid rounded mb-3" alt="Atlas">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Endurance</h6>
+                            <p>Atlas, son of Iapetus, was condemned to hold up the sky after the Titanomachy,
+                                symbolizing strength and burden.</p>
+                            <p><strong>Symbols:</strong> Globe, sky</p>
+                            <p><strong>Family:</strong> Son of Iapetus and Clymene; father of the Pleiades, Hyades, and
+                                Hesperides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanClymeneModal" tabindex="-1" aria-labelledby="titanClymeneModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanClymeneModalLabel">Clymene</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i1.wp.com/greek.mythologyworldwide.com/wp-content/uploads/2024/09/greek.mythologyworldwide.com-The-Titaness-Clymene-The-Oceanid-and-Her-Legacy.webp?w=1024&resize=1024,1024&ssl=1"
+                                class="img-fluid rounded mb-3" alt="Clymene">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Fame</h6>
+                            <p>Clymene, an Oceanid or Titaness, was the wife of Iapetus and mother of famous Titans like
+                                Prometheus and Atlas.</p>
+                            <p><strong>Symbols:</strong> Fame, water</p>
+                            <p><strong>Family:</strong> Daughter of Oceanus and Tethys; wife of Iapetus; mother of
+                                Atlas, Prometheus, Epimetheus, Menoetius.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanCoeusModal" tabindex="-1" aria-labelledby="titanCoeusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanCoeusModalLabel">Coeus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/42/83/c9/4283c92238faf08e1ca42964e9cf7b2c.jpg"
+                                class="img-fluid rounded mb-3" alt="Coeus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Intelligence</h6>
+                            <p>Coeus represented intellect and the inquisitive mind, often linked to the celestial axis.
+                            </p>
+                            <p><strong>Symbols:</strong> Stars, mind</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Phoebe; father of Leto and
+                                Asteria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanCriusModal" tabindex="-1" aria-labelledby="titanCriusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanCriusModalLabel">Crius</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/2f/04/c0/2f04c0984f91b548f8318354068e22e1.jpg"
+                                class="img-fluid rounded mb-3" alt="Crius">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Constellations</h6>
+                            <p>Crius was associated with the heavens and constellations, fathering notable offspring
+                                like Astraeus.</p>
+                            <p><strong>Symbols:</strong> Stars, ram</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Eurybia; father of Astraeus,
+                                Pallas, Perses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanCronusModal" tabindex="-1" aria-labelledby="titanCronusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanCronusModalLabel">Cronus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/89/24/bc/8924bcdf6c9734a961ef956a8e8fbf79.jpg"
+                                class="img-fluid rounded mb-3" alt="Cronus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Leader of the Titans</h6>
+                            <p>Cronus overthrew Uranus and ruled the Golden Age, later deposed by his son Zeus.</p>
+                            <p><strong>Symbols:</strong> Sickle, scythe</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Rhea; father of Zeus,
+                                Poseidon, Hades, Hera, Demeter, Hestia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanDioneModal" tabindex="-1" aria-labelledby="titanDioneModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanDioneModalLabel">Dione</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2db7af60-2afe-4d2a-8c82-11c7d2c25ab6/dgpf8v4-0800dc3c-4737-4ac7-996f-abcad276ced6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJkYjdhZjYwLTJhZmUtNGQyYS04YzgyLTExYzdkMmMyNWFiNlwvZGdwZjh2NC0wODAwZGMzYy00NzM3LTRhYzctOTk2Zi1hYmNhZDI3NmNlZDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0rIA4zwsrtri6AHr3WfAmlxjtkmFdWC-b2iCyVwLsXI"
+                                class="img-fluid rounded mb-3" alt="Dione">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Oracles</h6>
+                            <p>Dione, sometimes considered a Titaness, was linked to the oracle at Dodona and mother of
+                                Aphrodite in some myths.</p>
+                            <p><strong>Symbols:</strong> Oracle, water</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia or Oceanus and Tethys; mother of
+                                Aphrodite with Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanEosModal" tabindex="-1" aria-labelledby="titanEosModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanEosModalLabel">Eos</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/6b/bc/73/6bbc73adaab3996f74aacaca7f664e90.jpg"
+                                class="img-fluid rounded mb-3" alt="Eos">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Dawn</h6>
+                            <p>Eos, daughter of Hyperion and Thea, heralded the dawn each day, often depicted with rosy
+                                fingers.</p>
+                            <p><strong>Symbols:</strong> Dawn, wings</p>
+                            <p><strong>Family:</strong> Daughter of Hyperion and Thea; mother of the Anemoi with
+                                Astraeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanEpimetheusModal" tabindex="-1" aria-labelledby="titanEpimetheusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanEpimetheusModalLabel">Epimetheus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Epimetheus-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Epimetheus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Afterthought</h6>
+                            <p>Epimetheus created animals and accepted Pandora as his wife, inadvertently bringing
+                                misfortune to mankind.</p>
+                            <p><strong>Symbols:</strong> Animals, hindsight</p>
+                            <p><strong>Family:</strong> Son of Iapetus and Clymene; husband of Pandora.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanEurybiaModal" tabindex="-1" aria-labelledby="titanEurybiaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanEurybiaModalLabel">Eurybia</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i2.wp.com/greek.mythologyworldwide.com/wp-content/uploads/2024/09/greek.mythologyworldwide.com-The-Titaness-Eurybia-Goddess-of-the-Seas-Mastery.webp?w=1024&resize=1024,1024&ssl=1"
+                                class="img-fluid rounded mb-3" alt="Eurybia">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Sea Mastery</h6>
+                            <p>Eurybia, a sea goddess, was the consort of Crius and mother of powerful Titans.</p>
+                            <p><strong>Symbols:</strong> Sea, strength</p>
+                            <p><strong>Family:</strong> Daughter of Gaia and Pontus; wife of Crius; mother of Astraeus,
+                                Pallas, Perses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanEurynomeModal" tabindex="-1" aria-labelledby="titanEurynomeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanEurynomeModalLabel">Eurynome</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2db7af60-2afe-4d2a-8c82-11c7d2c25ab6/dgpsj9j-635bebb8-1c90-43ce-9f80-09c5491ee2b1.jpg/v1/fit/w_617,h_1080,q_70,strp/eurynome_by_weiyi1995_dgpsj9j-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzJkYjdhZjYwLTJhZmUtNGQyYS04YzgyLTExYzdkMmMyNWFiNlwvZGdwc2o5ai02MzViZWJiOC0xYzkwLTQzY2UtOWY4MC0wOWM1NDkxZWUyYjEuanBnIiwid2lkdGgiOiI8PTYxNyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.wT35rX3jrTGmrsvY0-dbCwx83J-Ow1dWZrO66GSwc4Y"
+                                class="img-fluid rounded mb-3" alt="Eurynome">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Pastures</h6>
+                            <p>Eurynome, an Oceanid or Titaness, was associated with meadows and ruled the world with
+                                Ophion before Cronus.</p>
+                            <p><strong>Symbols:</strong> Meadows, water</p>
+                            <p><strong>Family:</strong> Daughter of Oceanus and Tethys; mother of the Charites with
+                                Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanHyperionModal" tabindex="-1" aria-labelledby="titanHyperionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanHyperionModalLabel">Hyperion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/02/d7/ee/02d7ee752a962a4d20296220d912347d.jpg"
+                                class="img-fluid rounded mb-3" alt="Hyperion">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Light</h6>
+                            <p>Hyperion fathered the celestial deities Helios, Selene, and Eos, embodying light and
+                                observation.</p>
+                            <p><strong>Symbols:</strong> Sun, light</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Thea; father of Helios,
+                                Selene, Eos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanIapetusModal" tabindex="-1" aria-labelledby="titanIapetusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanIapetusModalLabel">Iapetus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/00/c6/b5/00c6b5031acb5d1f0c5803df57e471bc.jpg"
+                                class="img-fluid rounded mb-3" alt="Iapetus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Mortality</h6>
+                            <p>Iapetus was linked to human lifespan, fathering Titans who shaped mankind’s fate.</p>
+                            <p><strong>Symbols:</strong> Spear, death</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Clymene; father of Atlas,
+                                Prometheus, Epimetheus, Menoetius.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanLelantosModal" tabindex="-1" aria-labelledby="titanLelantosModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanLelantosModalLabel">Lelantos</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Lelantos-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Lelantos">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Air</h6>
+                            <p>Lelantos, a lesser-known Titan, was associated with air and stealth, father of Aura.</p>
+                            <p><strong>Symbols:</strong> Wind, invisibility</p>
+                            <p><strong>Family:</strong> Son of Coeus and Phoebe; father of Aura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanLetoModal" tabindex="-1" aria-labelledby="titanLetoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanLetoModalLabel">Leto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/c4/41/85/c44185e529b2e5f45ea33b69800c2bbd.jpg"
+                                class="img-fluid rounded mb-3" alt="Leto">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Motherhood</h6>
+                            <p>Leto, daughter of Coeus and Phoebe, bore Apollo and Artemis despite Hera’s wrath.</p>
+                            <p><strong>Symbols:</strong> Veil, motherhood</p>
+                            <p><strong>Family:</strong> Daughter of Coeus and Phoebe; mother of Apollo and Artemis with
+                                Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanMenoetiusModal" tabindex="-1" aria-labelledby="titanMenoetiusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanMenoetiusModalLabel">Menoetius</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Menoetius-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Menoetius">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Rage</h6>
+                            <p>Menoetius, son of Iapetus, was struck down by Zeus for his hubris during the Titanomachy.
+                            </p>
+                            <p><strong>Symbols:</strong> Lightning, anger</p>
+                            <p><strong>Family:</strong> Son of Iapetus and Clymene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanMetisModal" tabindex="-1" aria-labelledby="titanMetisModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanMetisModalLabel">Metis</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/c1/b8/17/c1b817e2f70ed99baa0e8faf605171c0.jpg"
+                                class="img-fluid rounded mb-3" alt="Metis">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Wisdom</h6>
+                            <p>Metis, an Oceanid or Titaness, was Zeus’s first wife, swallowed by him to prevent a
+                                prophecy.</p>
+                            <p><strong>Symbols:</strong> Owl, cunning</p>
+                            <p><strong>Family:</strong> Daughter of Oceanus and Tethys; mother of Athena with Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanMnemosyneModal" tabindex="-1" aria-labelledby="titanMnemosyneModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanMnemosyneModalLabel">Mnemosyne</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://mysteryinhistory.com/wp-content/uploads/Mnemosyne-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Mnemosyne">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Memory</h6>
+                            <p>Mnemosyne mothered the Muses with Zeus, embodying memory and inspiration.</p>
+                            <p><strong>Symbols:</strong> Scrolls, water</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; mother of the Muses with Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanOceanusModal" tabindex="-1" aria-labelledby="titanOceanusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanOceanusModalLabel">Oceanus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://i.pinimg.com/736x/bc/0b/f6/bc0bf654470768647f7b4cb8a27ec3d0.jpg"
+                                class="img-fluid rounded mb-3" alt="Oceanus">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of the Ocean</h6>
+                            <p>Oceanus ruled the great river encircling the world, staying neutral in the Titanomachy.
+                            </p>
+                            <p><strong>Symbols:</strong> Water, serpent</p>
+                            <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Tethys; father of the
+                                Oceanids and river gods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanOphionModal" tabindex="-1" aria-labelledby="titanOphionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanOphionModalLabel">Ophion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d26a519-f4a9-4786-aee3-512857c0481b/dj4yl8f-5e65ee28-c9da-45c9-9f39-ca1402964c7c.png/v1/fill/w_1280,h_854,q_80,strp/ophion_the_serpent_god_by_saralgam1980_dj4yl8f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkMjZhNTE5LWY0YTktNDc4Ni1hZWUzLTUxMjg1N2MwNDgxYlwvZGo0eWw4Zi01ZTY1ZWUyOC1jOWRhLTQ1YzktOWYzOS1jYTE0MDI5NjRjN2MucG5nIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8zZDI2YTUxOS1mNGE5LTQ3ODYtYWVlMy01MTI4NTdjMDQ4MWJcL3NhcmFsZ2FtMTk4MC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.8XGhhGKkb6_q7tcf6IvLJiGxCIKjU1kKvzSTHLVAZS0"
+                                class="img-fluid rounded mb-3" alt="Ophion">
+                        </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Serpents</h6>
+                            <p>Ophion, an early ruler with Eurynome, was overthrown by Cronus and Rhea in some myths.
+                            </p>
+                            <p><strong>Symbols:</strong> Serpent, chaos</p>
+                            <p><strong>Family:</strong> Consort of Eurynome.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="titanPallasModal" tabindex="-1" aria-labelledby="titanPallasModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanPallasModalLabel">Pallas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/c6/94/4f/c6944f178fe5bb0378546931afc0bfae.jpg"
+                                class="img-fluid rounded mb-3" alt="Pallas"> </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Warfare</h6>
+                            <p>Pallas, son of Crius and Eurybia, was associated with warfare and was slain by Athena
+                                during the Titanomachy.</p>
+                            <p><strong>Symbols:</strong> Spear, shield</p>
+                            <p><strong>Family:</strong> Son of Crius and Eurybia; husband of Styx; father of Nike,
+                                Kratos, Zelus, Bia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanPersesModal" tabindex="-1" aria-labelledby="titanPersesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanPersesModalLabel">Perses</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/8b/5c/7f/8b5c7f62a475d821eccde71872729bfb.jpg"
+                                class="img-fluid rounded mb-3" alt="Perses"> </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Destruction</h6>
+                            <p>Perses, son of Crius and Eurybia, embodied destruction and was the father of Hecate with
+                                Asteria.</p>
+                            <p><strong>Symbols:</strong> Fire, ruin</p>
+                            <p><strong>Family:</strong> Son of Crius and Eurybia; husband of Asteria; father of Hecate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanPhoebeModal" tabindex="-1" aria-labelledby="titanPhoebeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanPhoebeModalLabel">Phoebe</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://mysteryinhistory.com/wp-content/uploads/Phoebe-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Phoebe"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Prophecy</h6>
+                            <p>Phoebe, associated with the oracle of Delphi, was the grandmother of Apollo and Artemis.
+                            </p>
+                            <p><strong>Symbols:</strong> Moon, prophecy</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; wife of Coeus; mother of Leto,
+                                Asteria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanPrometheusModal" tabindex="-1" aria-labelledby="titanPrometheusModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanPrometheusModalLabel">Prometheus</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/f3/ec/94/f3ec945f7467c1adb7030b6f369174d4.jpg"
+                                class="img-fluid rounded mb-3" alt="Prometheus"> </div>
+                        <div class="col-md-7">
+                            <h6>Titan of Forethought</h6>
+                            <p>Prometheus created mankind and stole fire for them, earning Zeus’s punishment but
+                                symbolizing sacrifice.</p>
+                            <p><strong>Symbols:</strong> Fire, chains</p>
+                            <p><strong>Family:</strong> Son of Iapetus and Clymene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanRheaModal" tabindex="-1" aria-labelledby="titanRheaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanRheaModalLabel">Rhea</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/89/c8/89/89c889b7f7660ae0772118f0978e3d90.jpg"
+                                class="img-fluid rounded mb-3" alt="Rhea"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Fertility</h6>
+                            <p>Rhea, wife of Cronus, saved Zeus by hiding him, ensuring the Olympians’ rise.</p>
+                            <p><strong>Symbols:</strong> Lion, crown</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; wife of Cronus; mother of Zeus,
+                                Poseidon, Hades, Hera, Demeter, Hestia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanSeleneModal" tabindex="-1" aria-labelledby="titanSeleneModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanSeleneModalLabel">Selene</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/30/3a/86/303a86a16663ada63e3ee120dfedd546.jpg"
+                                class="img-fluid rounded mb-3" alt="Selene"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of the Moon</h6>
+                            <p>Selene drove the moon chariot across the night sky, embodying lunar radiance.</p>
+                            <p><strong>Symbols:</strong> Moon, crescent</p>
+                            <p><strong>Family:</strong> Daughter of Hyperion and Thea; lover of Endymion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanStyxModal" tabindex="-1" aria-labelledby="titanStyxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanStyxModalLabel">Styx</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://www.greekmythology.com/images/mythology/styx_image_157.jpg"
+                                class="img-fluid rounded mb-3" alt="Styx"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Oaths</h6>
+                            <p>Styx, the river goddess, swore binding oaths and allied with Zeus in the Titanomachy.</p>
+                            <p><strong>Symbols:</strong> River, oath</p>
+                            <p><strong>Family:</strong> Daughter of Oceanus and Tethys; wife of Pallas; mother of Nike,
+                                Kratos, Zelus, Bia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanTethysModal" tabindex="-1" aria-labelledby="titanTethysModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanTethysModalLabel">Tethys</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://mysteryinhistory.com/wp-content/uploads/Tethys-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Tethys"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Fresh Water</h6>
+                            <p>Tethys, wife of Oceanus, mothered the rivers and Oceanids, nurturing the world’s waters.
+                            </p>
+                            <p><strong>Symbols:</strong> Water, nurturing</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; wife of Oceanus; mother of the
+                                Oceanids and river gods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanTheaModal" tabindex="-1" aria-labelledby="titanTheaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanTheaModalLabel">Thea</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://i.pinimg.com/736x/76/95/da/7695da5d1e351655a596a07e5a67b328.jpg"
+                                class="img-fluid rounded mb-3" alt="Thea"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Sight</h6>
+                            <p>Thea, mother of celestial deities, was associated with sight and the shining light of the
+                                sky.</p>
+                            <p><strong>Symbols:</strong> Light, eyes</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; wife of Hyperion; mother of Helios,
+                                Selene, Eos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="titanThemisModal" tabindex="-1" aria-labelledby="titanThemisModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titanThemisModalLabel">Themis</h5> <button type="button"
+                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-5 text-center"> <img
+                                src="https://mysteryinhistory.com/wp-content/uploads/Themis-Greek-Titans-Full-List.webp"
+                                class="img-fluid rounded mb-3" alt="Themis"> </div>
+                        <div class="col-md-7">
+                            <h6>Titaness of Divine Law</h6>
+                            <p>Themis upheld divine law and order, mothering the Fates and Seasons with Zeus.</p>
+                            <p><strong>Symbols:</strong> Scales, sword</p>
+                            <p><strong>Family:</strong> Daughter of Uranus and Gaia; mother of the Moirai and Horae with
+                                Zeus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button> </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="subscription-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 text-center">
+                    <h2 class="h4 mb-3">Stay Enchanted</h2>
+                    <p class="text-muted mb-4">Subscribe to receive updates on new myths, artifacts, and legendary tales!</p>
+                    <form id="subscriptionForm" role="form" aria-label="Email Subscription Form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control subscribe-input" placeholder="Enter your email" aria-label="Email Address" id="subscribeEmail" required>
+                            <button class="btn btn-outline-light subscribe-button" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <div id="subscriptionFeedback" class="small text-muted" style="display: none;">Thank you for subscribing!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer pt-4 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <h5 class="footer-heading">Enchanted Realms</h5>
+                    <p class="small text-muted">Dive into the timeless tales of gods, heroes, and monsters from ancient Greece.</p>
+                    <p class="mb-0 small text-muted">© <span id="current-year"></span> Enchanted Realms. All rights reserved.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center text-md-start">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="olympians.html">Olympians</a></li>
+                        <li><a href="titans.html">Titans</a></li>
+                        <li><a href="gods.html">Greek Gods</a></li>
+                        <li><a href="artifacts.html">Artifacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center text-md-start">
+                    <h5 class="footer-heading">Connect</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <h5 class="footer-heading">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+            <p class="text-center small text-muted mb-0">Explore the myths | Learn the legends</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="scripts.js" defer></script>
+</body>
+
+</html>
