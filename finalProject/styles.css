@@ -580,6 +580,196 @@ textarea:focus {
   margin-bottom: 0;
 }
 
+.subscription-section {
+  background-color: #383838; 
+  color: var(--text-light);
+}
+
+.subscription-section p, 
+.subscription-section h2 {
+  color: var(--text-light) !important; 
+}
+
+.subscription-section .subscribe-input {
+  background-color: #ffffff; 
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.subscription-section .subscribe-button {
+  border-color: var(--text-light); 
+  color: var(--text-light); 
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.subscription-section .subscribe-button:hover {
+  border-color: #000000; 
+  background-color: var(--text-light); 
+  color: #000000; 
+}
+
+.subscription-section .input-group {
+  max-width: 400px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stories-page .myth-card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.stories-page .myth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stories-page .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.stories-page .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.stories-page .card-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.stories-page .card-details {
+  display: none;
+}
+
+.stories-page .read-story-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stories-page .read-story-btn:hover {
+  background-color: #495057;
+  transform: scale(1.05);
+}
+
+.stories-page .read-story-btn:focus {
+  outline: 2px solid #343a40;
+  outline-offset: 2px;
+}
+
+.stories-page .img-fluid {
+  object-fit: cover;
+  height: 100%;
+  max-height: 400px; 
+  width: 100%;
+}
+
+.story-detail-page .hero-section {
+  padding: 3rem 0;
+}
+
+.story-detail-page .hero-section h1{
+  color: var(--text-light);
+}
+
+
+.story-detail-page .hero-img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.story-detail-page .story-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.story-detail-page .story-content p {
+  margin-bottom: 1.25rem;
+}
+
+.story-detail-page .story-content hr {
+  border-color: var(--text-light);
+}
+
+.story-detail-page .story-content strong {
+  color: (var(--light-color));
+}
+
+.story-detail-page .back-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.story-detail-page .back-btn:hover {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.hero-section {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.back-btn-container {
+  text-align: center;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .subscription-section .input-group {
+      flex-direction: column; 
+  }
+  .subscription-section .subscribe-input,
+  .subscription-section .subscribe-button {
+      width: 100%; 
+      margin-bottom: 0.5rem;
+  }
+
+  .stories-page .card-details {
+    display: block;
+  }
+
+  .stories-page .card-meta.small {
+    display: none;
+  }
+}
+
 @media (max-width: 991.98px) {
   .navbar-collapse {
     background-color: rgba(30, 30, 40, 0.97);
@@ -669,6 +859,58 @@ textarea:focus {
 
   .modal-title {
     font-size: 2rem;
+  }
+
+  .stories-page .myth-card .row {
+      flex-direction: row;
+  }
+
+  .stories-page .myth-card .card-body {
+      position: relative;
+      height: 100%;
+      border-radius: 0;
+  }
+
+  .stories-page .myth-card .row {
+      flex-direction: row;
+  }
+  .stories-page .img-fluid {
+      max-height: 300px;
+  }
+  .stories-page .card-body {
+      padding: 1.25rem;
+      min-height: auto;
+  }
+  .stories-page .card-title {
+      font-size: 1.25rem;
+  }
+  .stories-page .card-text {
+      font-size: 0.9rem;
+  }
+  .stories-page .card-meta.small {
+    display: block;
+  }
+  .stories-page .read-story-btn {
+      align-self: center;
+      padding: 0.5rem 1.5rem;
+  }
+  
+  .story-detail-page .hero-img {
+      max-height: 300px;
+  }
+  
+  .story-detail-page .story-content {
+      padding: 1.5rem;
+  }
+  
+  .story-detail-page .display-4 {
+      font-size: 2rem;
+  }
+
+  .back-btn-container {
+    top: 1rem;
+    left: 1rem;
+    text-align: left;
   }
 }
 
