@@ -3,27 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
         <title>Greek Deities - Mythological Pantheon</title>
+    
         <meta name="description" content="Discover the pantheon of Greek deities, categorized into Olympians, Titans, Primordial Deities, Underworld Deities, and Nature Deities.">
         <meta property="og:title" content="Greek Deities - Mythological Pantheon">
         <meta property="og:description" content="Explore the diverse Greek deities, from Olympian gods to primordial forces, underworld guardians, and nature spirits.">
         <meta property="og:image" content="assets/images/greek-deities-og.jpg">
         <meta property="og:url" content="YOUR_WEBSITE_URL/deities.html">
         <meta property="og:type" content="article">
-
-        <!-- Font Imports -->
+    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <!-- Navigation -->
+            
             <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
@@ -46,14 +44,12 @@
                 </div>
             </nav>
         </header>
-
-        <!-- Main Content Area for Deities -->
+        
         <main class="page-content deities-page">
             <div class="container">
                 <h1 class="page-title text-center display-4 mb-4">Greek Deities</h1>
                 <p class="lead text-center mb-5 page-intro">Explore the rich pantheon of Greek mythology, organized into Olympians, Titans, Primordial Deities, Underworld Deities, and Nature Deities, each with unique roles and stories.</p>
 
-                <!-- Search Form -->
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-8 col-md-10">
                         <form class="search-form" role="search" id="deitySearchForm">
@@ -65,10 +61,9 @@
                         <div id="searchFeedbackDeities" class="text-center small text-muted mt-2" style="display: none;">No results found.</div>
                     </div>
                 </div>
-
-                <!-- Deities Tabs -->
+                
                 <section class="deities-section">
-                    <!-- Tab Navigation -->
+                    
                     <ul class="nav nav-tabs justify-content-center mb-4" id="deitiesTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="olympians-tab" data-bs-toggle="tab" data-bs-target="#olympians" type="button" role="tab" aria-controls="olympians" aria-selected="true">Olympian Gods</button>
@@ -86,10 +81,8 @@
                             <button class="nav-link" id="nature-tab" data-bs-toggle="tab" data-bs-target="#nature" type="button" role="tab" aria-controls="nature" aria-selected="false">Nature Deities</button>
                         </li>
                     </ul>
-
-                    <!-- Tab Content -->
+                    
                     <div class="tab-content" id="deitiesTabContent">
-                        <!-- Olympians Tab -->
                         <div class="tab-pane fade show active" id="olympians" role="tabpanel" aria-labelledby="olympians-tab">
                             <div class="row g-4">
                                 <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Zeus">
@@ -113,7 +106,6 @@
                             </div>
                         </div>
 
-                        <!-- Titans Tab -->
                         <div class="tab-pane fade" id="titans" role="tabpanel" aria-labelledby="titans-tab">
                             <div class="row g-4">
                                 <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Cronus">
@@ -137,7 +129,6 @@
                             </div>
                         </div>
 
-                        <!-- Primordial Deities Tab -->
                         <div class="tab-pane fade" id="primordial" role="tabpanel" aria-labelledby="primordial-tab">
                             <div class="row g-4">
                                 <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Gaia">
@@ -161,7 +152,6 @@
                             </div>
                         </div>
 
-                        <!-- Underworld Deities Tab -->
                         <div class="tab-pane fade" id="underworld" role="tabpanel" aria-labelledby="underworld-tab">
                             <div class="row g-4">
                                 <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hades">
@@ -185,7 +175,6 @@
                             </div>
                         </div>
 
-                        <!-- Nature Deities Tab -->
                         <div class="tab-pane fade" id="nature" role="tabpanel" aria-labelledby="nature-tab">
                             <div class="row g-4">
                                 <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Pan">
@@ -213,8 +202,6 @@
             </div>
         </main>
 
-        <!-- Modals for Deities -->
-        <!-- Zeus Modal -->
         <div class="modal fade" id="deityZeusModal" tabindex="-1" aria-labelledby="deityZeusModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -243,7 +230,6 @@
             </div>
         </div>
 
-        <!-- Athena Modal -->
         <div class="modal fade" id="deityAthenaModal" tabindex="-1" aria-labelledby="deityAthenaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -272,7 +258,6 @@
             </div>
         </div>
 
-        <!-- Cronus Modal -->
         <div class="modal fade" id="deityCronusModal" tabindex="-1" aria-labelledby="deityCronusModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -301,7 +286,6 @@
             </div>
         </div>
 
-        <!-- Rhea Modal -->
         <div class="modal fade" id="deityRheaModal" tabindex="-1" aria-labelledby="deityRheaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -330,7 +314,6 @@
             </div>
         </div>
 
-        <!-- Gaia Modal -->
         <div class="modal fade" id="deityGaiaModal" tabindex="-1" aria-labelledby="deityGaiaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -359,7 +342,6 @@
             </div>
         </div>
 
-        <!-- Uranus Modal -->
         <div class="modal fade" id="deityUranusModal" tabindex="-1" aria-labelledby="deityUranusModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -388,7 +370,6 @@
             </div>
         </div>
 
-        <!-- Hades Modal -->
         <div class="modal fade" id="deityHadesModal" tabindex="-1" aria-labelledby="deityHadesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -417,7 +398,6 @@
             </div>
         </div>
 
-        <!-- Thanatos Modal -->
         <div class="modal fade" id="deityThanatosModal" tabindex="-1" aria-labelledby="deityThanatosModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -446,7 +426,6 @@
             </div>
         </div>
 
-        <!-- Pan Modal -->
         <div class="modal fade" id="deityPanModal" tabindex="-1" aria-labelledby="deityPanModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -475,7 +454,6 @@
             </div>
         </div>
 
-        <!-- Nereus Modal -->
         <div class="modal fade" id="deityNereusModal" tabindex="-1" aria-labelledby="deityNereusModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -504,7 +482,6 @@
             </div>
         </div>
 
-        <!-- Subscription Section -->
         <section class="subscription-section py-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -523,7 +500,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="site-footer pt-4 pb-3">
             <div class="container">
                 <div class="row gy-4">
@@ -555,8 +531,9 @@
                     <div class="col-lg-2 col-md-6 text-center text-md-start">
                         <h5 class="footer-heading">Legal</h5>
                         <ul class="list-unstyled footer-links">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -565,7 +542,6 @@
             </div>
         </footer>
 
-        <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
         <script src="scripts.js" defer></script>
     </body>

@@ -593,7 +593,7 @@ textarea:focus {
 .subscription-section .subscribe-input {
   background-color: #ffffff; 
   border: 1px solid var(--text-light);
-  color: var(--text-color);
+  color: var(--text-light);
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
@@ -663,15 +663,15 @@ textarea:focus {
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0.5rem 1.5rem;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   color: #fff;
   border-radius: 0.25rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .stories-page .read-story-btn:hover {
-  background-color: #495057;
+  background-color: var(--link-hover-color);
   transform: scale(1.05);
 }
 
@@ -687,68 +687,107 @@ textarea:focus {
   width: 100%;
 }
 
-.story-detail-page .hero-section {
+.story-detail-page .hero-section,
+.legal-detail-page .hero-section {
   padding: 3rem 0;
+  position: relative;
 }
 
-.story-detail-page .hero-section h1{
+.story-detail-page .hero-section h1,
+.legal-detail-page .hero-section h1 {
   color: var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 132, 0, 0.3);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-
-.story-detail-page .hero-img {
+.story-detail-page .hero-img,
+.legal-detail-page .hero-img {
   max-height: 400px;
+  width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-.story-detail-page .story-content {
+.story-detail-page .story-content,
+.legal-detail-page .legal-content {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--body-font);
   color: var(--text-light);
   line-height: 1.8;
+  padding: 2rem;
 }
 
-.story-detail-page .story-content p {
+.story-detail-page .story-content p,
+.legal-detail-page .legal-content p {
   margin-bottom: 1.25rem;
-}
-
-.story-detail-page .story-content hr {
-  border-color: var(--text-light);
-}
-
-.story-detail-page .story-content strong {
-  color: (var(--light-color));
-}
-
-.story-detail-page .back-btn {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
   font-size: 1rem;
-  padding: 0.75rem 2rem;
-  background-color: #343a40;
-  border-color: #343a40;
-  color: #fff;
 }
 
-.story-detail-page .back-btn:hover {
-  background-color: #495057;
-  border-color: #495057;
+.story-detail-page .story-content hr,
+.legal-detail-page .legal-content hr {
+  border-color: var(--text-light);
+  opacity: 0.5;
 }
 
-.hero-section {
-  position: relative;
-  padding-top: 1rem;
+.story-detail-page .story-content strong,
+.legal-detail-page .legal-content strong {
+  color: var(--light-color);
+  font-weight: 700;
 }
 
-.back-btn-container {
-  text-align: center;
+.story-detail-page .story-content ul,
+.legal-detail-page .legal-content ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
 }
 
-.back-btn {
-  padding: 0.5rem 1rem;
+.story-detail-page .story-content h2,
+.legal-detail-page .legal-content h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story-detail-page .back-btn-container,
+.legal-detail-page .back-btn-container {
+  text-align: left;
+}
+
+.story-detail-page .back-btn,
+.legal-detail-page .back-btn {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.story-detail-page .back-btn:hover,
+.legal-detail-page .back-btn:hover {
+  background-color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.story-detail-page .back-btn:focus,
+.legal-detail-page .back-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 @media (min-width: 576px) {
@@ -867,6 +906,7 @@ textarea:focus {
 
   .stories-page .myth-card .card-body {
       position: relative;
+      background-color: rgba(0, 0, 0, 0.5);
       height: 100%;
       border-radius: 0;
   }
@@ -896,7 +936,7 @@ textarea:focus {
   }
   
   .story-detail-page .hero-img {
-      max-height: 300px;
+      max-height: 500px;
   }
   
   .story-detail-page .story-content {

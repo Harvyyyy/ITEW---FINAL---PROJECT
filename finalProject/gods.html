@@ -5,32 +5,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Updated Title and Meta Descriptions for Greek Gods -->
+        
         <title>Greek Gods - Deities of Mythology</title>
-        <meta name="description" content="Explore a wider pantheon of Greek gods and goddesses beyond the Olympians and Titans, including primordial deities and other significant figures.">
 
+        <meta name="description" content="Explore a wider pantheon of Greek gods and goddesses beyond the Olympians and Titans, including primordial deities and other significant figures.">
         <meta property="og:title" content="Greek Gods - Deities of Mythology">
         <meta property="og:description" content="Discover various deities from Greek mythology, including major Olympians, Titans, primordial beings, and other notable gods like Persephone, Dionysus, Demeter, Pan, and more.">
-        <meta property="og:image" content="assets/images/greek-gods-og.jpg"> <!-- Suggest using a relevant OG image -->
-        <meta property="og:url" content="YOUR_WEBSITE_URL/gods.html"> <!-- Update with your actual URL -->
+        <meta property="og:image" content="assets/images/greek-gods-og.jpg"> 
+        <meta property="og:url" content="YOUR_WEBSITE_URL/gods.html"> 
         <meta property="og:type" content="article">
 
-        <!-- Font Imports (Keep as is) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-        <!-- Bootstrap CSS (Keep as is) -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- Custom Stylesheet (Keep as is) -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <body>
-
         <header>
-            <!-- Navigation - Updated Active Link -->
             <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
@@ -54,15 +46,11 @@
             </nav>
         </header>
 
-        <!-- Main Content Area for Greek Gods -->
-        <!-- Updated main class -->
         <main class="page-content gods-page">
             <div class="container">
-                <!-- Updated Title and Intro -->
                 <h1 class="page-title text-center display-4 mb-4">Greek Gods & Goddesses</h1>
                 <p class="lead text-center mb-5 page-intro">Delve into the diverse pantheon of Greek deities, including the famous Olympians, the ancient Titans, primordial beings, and other significant gods and goddesses who shaped the myths.</p>
 
-                <!-- Search Form - Updated IDs -->
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-8 col-md-10">
                         <form class="search-form" role="search" id="godSearchForm">
@@ -71,97 +59,87 @@
                                 <button class="btn btn-outline-light search-button" type="submit">Search</button>
                             </div>
                         </form>
-                         <div id="searchFeedbackGods" class="text-center small text-muted mt-2" style="display: none;">No results found.</div> <!-- Updated Feedback ID -->
+                         <div id="searchFeedbackGods" class="text-center small text-muted mt-2" style="display: none;">No results found.</div> 
                     </div>
                 </div>
 
-                <!-- God Grid - Updated ID -->
                 <div class="row g-4 justify-content-center" id="godGrid">
-
-                    <!-- Example Grid Items (Replace/Add more as needed) -->
-                    <!-- Include key Olympians/Titans if desired, plus others -->
-
                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Zeus">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godZeusModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godZeusModal"> 
                             <img src="https://i.pinimg.com/736x/35/09/cc/3509ccaf49f7181c1e757c76165c6d57.jpg" class="card-img-top" alt="Zeus - King of the Gods">
                             <div class="card-body"> <h5 class="card-title">Zeus</h5> <p class="card-text small">King of the Gods</p> </div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hera">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHeraModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHeraModal"> 
                              <img src="https://i.pinimg.com/736x/e0/8b/fa/e08bfa844ad262ef2b61fcf166b13e34.jpg" class="card-img-top" alt="Hera - Queen of the Gods">
                             <div class="card-body"> <h5 class="card-title">Hera</h5> <p class="card-text small">Queen of the Gods</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Poseidon">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPoseidonModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPoseidonModal"> 
                              <img src="https://i.pinimg.com/736x/da/7e/16/da7e166d10e8f1fc5144a4922e72a888.jpg" class="card-img-top" alt="Poseidon - God of the Sea">
                             <div class="card-body"> <h5 class="card-title">Poseidon</h5> <p class="card-text small">God of the Sea</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hades">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHadesModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHadesModal"> 
                              <img src="https://i.pinimg.com/736x/04/29/02/0429020bb4263964916183e3da873001.jpg" class="card-img-top" alt="Hades - God of the Underworld">
                             <div class="card-body"> <h5 class="card-title">Hades</h5> <p class="card-text small">God of the Underworld</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Athena">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAthenaModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAthenaModal"> 
                              <img src="https://i.pinimg.com/736x/ea/bd/e1/eabde1ad12243157c454641df7df2cc6.jpg" class="card-img-top" alt="Athena - Goddess of Wisdom">
                             <div class="card-body"> <h5 class="card-title">Athena</h5> <p class="card-text small">Goddess of Wisdom</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Apollo">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godApolloModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godApolloModal"> 
                              <img src="https://i.pinimg.com/736x/0a/41/f9/0a41f94662f6c8301781430eef6a556a.jpg" class="card-img-top" alt="Apollo - God of Music and Light">
                             <div class="card-body"> <h5 class="card-title">Apollo</h5> <p class="card-text small">God of Music & Light</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Artemis">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godArtemisModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godArtemisModal"> 
                              <img src="https://i.pinimg.com/736x/94/58/3e/94583e9fd5d95ce9b1732a70495b4bed.jpg" class="card-img-top" alt="Artemis - Goddess of the Hunt">
                             <div class="card-body"> <h5 class="card-title">Artemis</h5> <p class="card-text small">Goddess of the Hunt</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Aphrodite">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAphroditeModal"> <!-- Unique Modal Target -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAphroditeModal"> 
                              <img src="https://i.pinimg.com/736x/8c/45/c5/8c45c5560f2f66ca41abc9a212c25606.jpg" class="card-img-top" alt="Aphrodite - Goddess of Love">
                             <div class="card-body"> <h5 class="card-title">Aphrodite</h5> <p class="card-text small">Goddess of Love</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Persephone">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPersephoneModal"> <!-- Unique Modal Target -->
-                            <img src="assets/images/god_persephone.jpg" class="card-img-top" alt="Persephone - Queen of the Underworld"> <!-- Placeholder image path -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPersephoneModal"> 
+                            <img src="assets/images/god_persephone.jpg" class="card-img-top" alt="Persephone - Queen of the Underworld"> 
                             <div class="card-body"> <h5 class="card-title">Persephone</h5> <p class="card-text small">Queen of Underworld</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Dionysus">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDionysusModal"> <!-- Unique Modal Target -->
-                            <img src="assets/images/god_dionysus.jpg" class="card-img-top" alt="Dionysus - God of Wine"> <!-- Placeholder image path -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDionysusModal"> 
+                            <img src="assets/images/god_dionysus.jpg" class="card-img-top" alt="Dionysus - God of Wine"> 
                             <div class="card-body"> <h5 class="card-title">Dionysus</h5> <p class="card-text small">God of Wine & Ecstasy</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Demeter">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDemeterModal"> <!-- Unique Modal Target -->
-                            <img src="assets/images/god_demeter.jpg" class="card-img-top" alt="Demeter - Goddess of Harvest"> <!-- Placeholder image path -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDemeterModal"> 
+                            <img src="assets/images/god_demeter.jpg" class="card-img-top" alt="Demeter - Goddess of Harvest"> 
                             <div class="card-body"> <h5 class="card-title">Demeter</h5> <p class="card-text small">Goddess of Harvest</p> </div>
                         </div>
                     </div>
                      <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Pan">
-                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPanModal"> <!-- Unique Modal Target -->
-                            <img src="assets/images/god_pan.jpg" class="card-img-top" alt="Pan - God of the Wild"> <!-- Placeholder image path -->
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPanModal"> 
+                            <img src="assets/images/god_pan.jpg" class="card-img-top" alt="Pan - God of the Wild"> 
                             <div class="card-body"> <h5 class="card-title">Pan</h5> <p class="card-text small">God of the Wild</p> </div>
                         </div>
                     </div>
-                    <!-- Add more god cards here following the pattern -->
-
                 </div>
             </div>
         </main>
 
-        <!-- Modals for the Gods (Create one for EACH card above) -->
-
-        <!-- Zeus Modal (Copied from olympians.html, but use unique ID prefix 'god') -->
         <div class="modal fade" id="godZeusModal" tabindex="-1" aria-labelledby="godZeusModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -191,7 +169,6 @@
             </div>
         </div>
 
-        <!-- Hera Modal -->
         <div class="modal fade" id="godHeraModal" tabindex="-1" aria-labelledby="godHeraModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -221,7 +198,6 @@
             </div>
         </div>
 
-        <!-- Poseidon Modal -->
         <div class="modal fade" id="godPoseidonModal" tabindex="-1" aria-labelledby="godPoseidonModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -251,7 +227,6 @@
             </div>
         </div>
 
-        <!-- Hades Modal -->
         <div class="modal fade" id="godHadesModal" tabindex="-1" aria-labelledby="godHadesModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -281,7 +256,6 @@
             </div>
         </div>
 
-        <!-- Athena Modal -->
          <div class="modal fade" id="godAthenaModal" tabindex="-1" aria-labelledby="godAthenaModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -311,7 +285,6 @@
             </div>
         </div>
 
-        <!-- Apollo Modal -->
         <div class="modal fade" id="godApolloModal" tabindex="-1" aria-labelledby="godApolloModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -341,7 +314,6 @@
             </div>
         </div>
 
-        <!-- Artemis Modal -->
         <div class="modal fade" id="godArtemisModal" tabindex="-1" aria-labelledby="godArtemisModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -371,7 +343,6 @@
             </div>
         </div>
 
-        <!-- Aphrodite Modal -->
         <div class="modal fade" id="godAphroditeModal" tabindex="-1" aria-labelledby="godAphroditeModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -401,7 +372,6 @@
             </div>
         </div>
 
-        <!-- Persephone Modal -->
         <div class="modal fade" id="godPersephoneModal" tabindex="-1" aria-labelledby="godPersephoneModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -412,7 +382,6 @@
                     <div class="modal-body">
                         <div class="row g-4">
                             <div class="col-md-5 text-center">
-                                <!-- Placeholder image -->
                                 <img src="assets/images/god_persephone.jpg" class="img-fluid rounded mb-3" alt="Persephone">
                             </div>
                             <div class="col-md-7">
@@ -432,7 +401,6 @@
             </div>
         </div>
 
-        <!-- Dionysus Modal -->
         <div class="modal fade" id="godDionysusModal" tabindex="-1" aria-labelledby="godDionysusModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -443,7 +411,6 @@
                     <div class="modal-body">
                         <div class="row g-4">
                             <div class="col-md-5 text-center">
-                                 <!-- Placeholder image -->
                                 <img src="assets/images/god_dionysus.jpg" class="img-fluid rounded mb-3" alt="Dionysus">
                             </div>
                             <div class="col-md-7">
@@ -463,7 +430,6 @@
             </div>
         </div>
 
-        <!-- Demeter Modal -->
         <div class="modal fade" id="godDemeterModal" tabindex="-1" aria-labelledby="godDemeterModalLabel" aria-hidden="true">
              <div class="modal-dialog modal-lg modal-dialog-centered">
                  <div class="modal-content">
@@ -474,7 +440,6 @@
                     <div class="modal-body">
                          <div class="row g-4">
                              <div class="col-md-5 text-center">
-                                <!-- Placeholder image -->
                                 <img src="assets/images/god_demeter.jpg" class="img-fluid rounded mb-3" alt="Demeter">
                              </div>
                              <div class="col-md-7">
@@ -494,7 +459,6 @@
             </div>
         </div>
 
-        <!-- Pan Modal -->
         <div class="modal fade" id="godPanModal" tabindex="-1" aria-labelledby="godPanModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -505,7 +469,6 @@
                     <div class="modal-body">
                         <div class="row g-4">
                             <div class="col-md-5 text-center">
-                                <!-- Placeholder image -->
                                 <img src="assets/images/god_pan.jpg" class="img-fluid rounded mb-3" alt="Pan">
                             </div>
                             <div class="col-md-7">
@@ -525,10 +488,6 @@
             </div>
         </div>
 
-        <!-- Add more Modals here for other gods added to the grid -->
-
-
-        <!-- Subscription Section (Keep as is) -->
         <section class="subscription-section py-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -547,7 +506,6 @@
             </div>
         </section>
 
-        <!-- Footer (Keep as is, ensure links are correct) -->
         <footer class="site-footer pt-4 pb-3">
            <div class="container">
                 <div class="row gy-4">
@@ -578,8 +536,9 @@
                     <div class="col-lg-2 col-md-6 text-center text-md-start">
                         <h5 class="footer-heading">Legal</h5>
                         <ul class="list-unstyled footer-links">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -588,9 +547,7 @@
            </div>
         </footer>
 
-        <!-- Scripts (Keep as is) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
         <script src="scripts.js" defer></script>
-
     </body>
 </html>
