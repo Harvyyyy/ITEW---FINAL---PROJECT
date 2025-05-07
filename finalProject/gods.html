@@ -1,0 +1,553 @@
+--- START OF FILE gods.html ---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Greek Gods - Deities of Mythology</title>
+
+        <meta name="description" content="Explore a wider pantheon of Greek gods and goddesses beyond the Olympians and Titans, including primordial deities and other significant figures.">
+        <meta property="og:title" content="Greek Gods - Deities of Mythology">
+        <meta property="og:description" content="Discover various deities from Greek mythology, including major Olympians, Titans, primordial beings, and other notable gods like Persephone, Dionysus, Demeter, Pan, and more.">
+        <meta property="og:image" content="assets/images/greek-gods-og.jpg"> 
+        <meta property="og:url" content="YOUR_WEBSITE_URL/gods.html"> 
+        <meta property="og:type" content="article">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="Enchanted Realm Logo" class="logo-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="olympians.html">Olympians</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="titans.html">Titans</a> </li>
+                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="gods.html">Gods</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="deities.html">Deities</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="artifacts.html">Artifacts</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="stories.html">Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-content gods-page">
+            <div class="container">
+                <h1 class="page-title text-center display-4 mb-4">Greek Gods & Goddesses</h1>
+                <p class="lead text-center mb-5 page-intro">Delve into the diverse pantheon of Greek deities, including the famous Olympians, the ancient Titans, primordial beings, and other significant gods and goddesses who shaped the myths.</p>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 col-md-10">
+                        <form class="search-form" role="search" id="godSearchForm">
+                            <div class="input-group">
+                                <input type="search" class="form-control search-input" placeholder="Search for a God or Goddess..." aria-label="Search Greek Gods" id="godSearchInput">
+                                <button class="btn btn-outline-light search-button" type="submit">Search</button>
+                            </div>
+                        </form>
+                         <div id="searchFeedbackGods" class="text-center small text-muted mt-2" style="display: none;">No results found.</div> 
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center" id="godGrid">
+                    <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Zeus">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godZeusModal"> 
+                            <img src="https://i.pinimg.com/736x/35/09/cc/3509ccaf49f7181c1e757c76165c6d57.jpg" class="card-img-top" alt="Zeus - King of the Gods">
+                            <div class="card-body"> <h5 class="card-title">Zeus</h5> <p class="card-text small">King of the Gods</p> </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hera">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHeraModal"> 
+                             <img src="https://i.pinimg.com/736x/e0/8b/fa/e08bfa844ad262ef2b61fcf166b13e34.jpg" class="card-img-top" alt="Hera - Queen of the Gods">
+                            <div class="card-body"> <h5 class="card-title">Hera</h5> <p class="card-text small">Queen of the Gods</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Poseidon">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPoseidonModal"> 
+                             <img src="https://i.pinimg.com/736x/da/7e/16/da7e166d10e8f1fc5144a4922e72a888.jpg" class="card-img-top" alt="Poseidon - God of the Sea">
+                            <div class="card-body"> <h5 class="card-title">Poseidon</h5> <p class="card-text small">God of the Sea</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hades">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godHadesModal"> 
+                             <img src="https://i.pinimg.com/736x/04/29/02/0429020bb4263964916183e3da873001.jpg" class="card-img-top" alt="Hades - God of the Underworld">
+                            <div class="card-body"> <h5 class="card-title">Hades</h5> <p class="card-text small">God of the Underworld</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Athena">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAthenaModal"> 
+                             <img src="https://i.pinimg.com/736x/ea/bd/e1/eabde1ad12243157c454641df7df2cc6.jpg" class="card-img-top" alt="Athena - Goddess of Wisdom">
+                            <div class="card-body"> <h5 class="card-title">Athena</h5> <p class="card-text small">Goddess of Wisdom</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Apollo">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godApolloModal"> 
+                             <img src="https://i.pinimg.com/736x/0a/41/f9/0a41f94662f6c8301781430eef6a556a.jpg" class="card-img-top" alt="Apollo - God of Music and Light">
+                            <div class="card-body"> <h5 class="card-title">Apollo</h5> <p class="card-text small">God of Music & Light</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Artemis">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godArtemisModal"> 
+                             <img src="https://i.pinimg.com/736x/94/58/3e/94583e9fd5d95ce9b1732a70495b4bed.jpg" class="card-img-top" alt="Artemis - Goddess of the Hunt">
+                            <div class="card-body"> <h5 class="card-title">Artemis</h5> <p class="card-text small">Goddess of the Hunt</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Aphrodite">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godAphroditeModal"> 
+                             <img src="https://i.pinimg.com/736x/8c/45/c5/8c45c5560f2f66ca41abc9a212c25606.jpg" class="card-img-top" alt="Aphrodite - Goddess of Love">
+                            <div class="card-body"> <h5 class="card-title">Aphrodite</h5> <p class="card-text small">Goddess of Love</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Persephone">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPersephoneModal"> 
+                            <img src="assets/images/god_persephone.jpg" class="card-img-top" alt="Persephone - Queen of the Underworld"> 
+                            <div class="card-body"> <h5 class="card-title">Persephone</h5> <p class="card-text small">Queen of Underworld</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Dionysus">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDionysusModal"> 
+                            <img src="assets/images/god_dionysus.jpg" class="card-img-top" alt="Dionysus - God of Wine"> 
+                            <div class="card-body"> <h5 class="card-title">Dionysus</h5> <p class="card-text small">God of Wine & Ecstasy</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Demeter">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godDemeterModal"> 
+                            <img src="assets/images/god_demeter.jpg" class="card-img-top" alt="Demeter - Goddess of Harvest"> 
+                            <div class="card-body"> <h5 class="card-title">Demeter</h5> <p class="card-text small">Goddess of Harvest</p> </div>
+                        </div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Pan">
+                        <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#godPanModal"> 
+                            <img src="assets/images/god_pan.jpg" class="card-img-top" alt="Pan - God of the Wild"> 
+                            <div class="card-body"> <h5 class="card-title">Pan</h5> <p class="card-text small">God of the Wild</p> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal fade" id="godZeusModal" tabindex="-1" aria-labelledby="godZeusModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godZeusModalLabel">Zeus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/35/09/cc/3509ccaf49f7181c1e757c76165c6d57.jpg" class="img-fluid rounded mb-3" alt="Zeus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>King of the Gods, God of Sky, Thunder, Lightning, Law, Order, Justice</h6>
+                                <p>The supreme ruler of Olympus and the Greek pantheon, Zeus ascended to power after leading his siblings in overthrowing their father, Cronus, and the Titans. He governs the cosmos, enforces divine law, and maintains order among gods and mortals, wielding the devastating thunderbolt forged by the Cyclopes.</p>
+                                <p>Though married to Hera, his numerous affairs led to the birth of many gods and heroes, often incurring Hera's wrath. He represents ultimate authority, power, and justice, but also exhibits mortal flaws like lust and anger.</p>
+                                <p><strong>Symbols:</strong> Thunderbolt, eagle, oak tree, bull, scales, scepter.</p>
+                                <p><strong>Roman Counterpart:</strong> Jupiter</p>
+                                <p><strong>Family:</strong> Son of Cronus and Rhea; brother to Hera, Poseidon, Hades, Hestia, Demeter; husband to Hera; father of Athena, Apollo, Artemis, Ares, Hermes, Heracles, Helen, Persephone, and many others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godHeraModal" tabindex="-1" aria-labelledby="godHeraModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godHeraModalLabel">Hera</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                 <img src="https://i.pinimg.com/736x/e0/8b/fa/e08bfa844ad262ef2b61fcf166b13e34.jpg" class="img-fluid rounded mb-3" alt="Hera">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>Queen of the Gods, Goddess of Marriage, Women, Childbirth, Family</h6>
+                                <p>As Zeus's sister and wife, Hera held the highest status among the goddesses. She is the staunch protector of marriage and fidelity, ironically often directing her considerable wrath towards Zeus's mortal lovers and their offspring (like Heracles) rather than Zeus himself.</p>
+                                <p>Her sacred animals reflect her majesty and watchfulness. She presided over weddings and blessed marital unions.</p>
+                                <p><strong>Symbols:</strong> Peacock, pomegranate, crown, scepter, cuckoo, lion, cow.</p>
+                                <p><strong>Roman Counterpart:</strong> Juno</p>
+                                <p><strong>Family:</strong> Daughter of Cronus and Rhea; sister and wife to Zeus; mother of Ares, Hephaestus, Hebe, Eileithyia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godPoseidonModal" tabindex="-1" aria-labelledby="godPoseidonModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godPoseidonModalLabel">Poseidon</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                 <img src="https://i.pinimg.com/736x/da/7e/16/da7e166d10e8f1fc5144a4922e72a888.jpg" class="img-fluid rounded mb-3" alt="Poseidon">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>God of the Sea, Storms, Earthquakes, Horses</h6>
+                                <p>One of the three most powerful gods, Poseidon holds dominion over all waters. With his mighty trident, he can conjure storms, cause earthquakes ('Earth-Shaker'), and shatter rocks. He created horses and is associated with their power and untamed nature.</p>
+                                <p>He had a significant rivalry with Athena for the patronage of Athens. His moods were as variable as the sea itself, capable of both calm and immense destruction.</p>
+                                <p><strong>Symbols:</strong> Trident, dolphin, horse, bull, fish.</p>
+                                <p><strong>Roman Counterpart:</strong> Neptune</p>
+                                <p><strong>Family:</strong> Son of Cronus and Rhea; brother to Zeus, Hades, Hera, Hestia, Demeter; husband of Amphitrite; father of Triton, Theseus (by Aethra), Polyphemus, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godHadesModal" tabindex="-1" aria-labelledby="godHadesModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godHadesModalLabel">Hades</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                 <img src="https://i.pinimg.com/736x/04/29/02/0429020bb4263964916183e3da873001.jpg" class="img-fluid rounded mb-3" alt="Hades">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>God of the Underworld, the Dead, Riches</h6>
+                                <p>Drawing the shortest lot after the Titanomachy, Hades became ruler of the underworld, the realm of the dead. Though often depicted as grim and unyielding, he was not considered malevolent, but rather a just custodian of souls. He rarely left his domain, the most famous exception being his abduction of Persephone.</p>
+                                <p>As god of the earth's hidden wealth (minerals and fertile soil), he was also known as Pluto ('The Rich One').</p>
+                                <p><strong>Symbols:</strong> Cerberus, Helm of Darkness, cypress tree, narcissus flower, drinking horn (cornucopia), scepter, key, bident.</p>
+                                <p><strong>Roman Counterpart:</strong> Pluto (also Dis Pater)</p>
+                                <p><strong>Family:</strong> Son of Cronus and Rhea; brother to Zeus, Poseidon, Hera, Hestia, Demeter; husband of Persephone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="modal fade" id="godAthenaModal" tabindex="-1" aria-labelledby="godAthenaModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godAthenaModalLabel">Athena</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/ea/bd/e1/eabde1ad12243157c454641df7df2cc6.jpg" class="img-fluid rounded mb-3" alt="Athena">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Goddess of Wisdom, Strategy, Warfare, Crafts</h6>
+                                <p>Born fully formed and armed from Zeus's forehead after he swallowed her mother Metis, Athena represents intelligence, skill, and strategic warfare. She is the patron goddess of Athens, having won the city's favor over Poseidon by gifting them the olive tree.</p>
+                                <p>A virgin goddess, she aided many heroes like Odysseus and Perseus, valuing cunning and tactical prowess over brute force. She was also a patron of crafts, particularly weaving.</p>
+                                <p><strong>Symbols:</strong> Owl, olive tree, snake, Aegis (shield often bearing Medusa's head), armor, helmet, spear.</p>
+                                <p><strong>Roman Counterpart:</strong> Minerva</p>
+                                <p><strong>Family:</strong> Daughter of Zeus (and Metis).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godApolloModal" tabindex="-1" aria-labelledby="godApolloModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godApolloModalLabel">Apollo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/0a/41/f9/0a41f94662f6c8301781430eef6a556a.jpg" class="img-fluid rounded mb-3" alt="Apollo">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of Music, Arts, Knowledge, Prophecy, Light, Healing, Plague</h6>
+                                <p>Apollo, the radiant son of Zeus and Leto, embodies order, harmony, and enlightenment. As the master musician, he charmed audiences with his lyre. His prophetic powers were channeled through the Oracle at Delphi, the most revered oracle in the ancient world. He was also a god of healing, though he could inflict plague with his arrows when angered.</p>
+                                <p>He represents youthful beauty and intellectual pursuits, acting as a leader of the Muses and a patron of the arts.</p>
+                                <p><strong>Symbols:</strong> Lyre, bow and arrow, laurel wreath, sun, swan, raven.</p>
+                                <p><strong>Roman Counterpart:</strong> Apollo</p>
+                                <p><strong>Family:</strong> Son of Zeus and Leto; twin brother of Artemis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godArtemisModal" tabindex="-1" aria-labelledby="godArtemisModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godArtemisModalLabel">Artemis</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                 <img src="https://i.pinimg.com/736x/94/58/3e/94583e9fd5d95ce9b1732a70495b4bed.jpg" class="img-fluid rounded mb-3" alt="Artemis">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>Goddess of the Hunt, Wilderness, Wild Animals, Moon, Chastity</h6>
+                                <p>The eternally young twin sister of Apollo, Artemis fiercely guarded her independence and chastity, demanding the same from her band of nymph huntresses. She roamed the wild landscapes, protecting animals and nature, but was also a skilled archer who could bring sudden death or disease.</p>
+                                <p>Associated with the moon (often contrasted with Apollo's sun), she was a protector of young women and childbirth, yet also known for her wrath against those who offended her or threatened her domain.</p>
+                                <p><strong>Symbols:</strong> Bow and arrow, quiver, hunting dogs, deer (stag), moon, cypress tree, bear.</p>
+                                <p><strong>Roman Counterpart:</strong> Diana</p>
+                                <p><strong>Family:</strong> Daughter of Zeus and Leto; twin sister of Apollo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godAphroditeModal" tabindex="-1" aria-labelledby="godAphroditeModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godAphroditeModalLabel">Aphrodite</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                 <img src="https://i.pinimg.com/736x/8c/45/c5/8c45c5560f2f66ca41abc9a212c25606.jpg" class="img-fluid rounded mb-3" alt="Aphrodite">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>Goddess of Love, Beauty, Pleasure, Passion, Procreation</h6>
+                                <p>Emerging from the sea foam (or daughter of Zeus and Dione), Aphrodite captivated gods and mortals alike. Her immense beauty and power over love sparked numerous myths, including her reluctant marriage to Hephaestus and affairs, notably with Ares. She played a key role in the Trojan War by promising Helen to Paris.</p>
+                                <p>Despite her association with romance, she could also be vengeful towards those who scorned her worship. Her influence extended beyond romantic love to encompass beauty in art and nature.</p>
+                                <p><strong>Symbols:</strong> Dove, swan, rose, myrtle, scallop shell, girdle, mirror.</p>
+                                <p><strong>Roman Counterpart:</strong> Venus</p>
+                                <p><strong>Family:</strong> See description; wife of Hephaestus; mother of Eros, Harmonia, Aeneas (with Anchises), etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godPersephoneModal" tabindex="-1" aria-labelledby="godPersephoneModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godPersephoneModalLabel">Persephone</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/god_persephone.jpg" class="img-fluid rounded mb-3" alt="Persephone">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Queen of the Underworld, Goddess of Springtime, Vegetation, Maidenhood</h6>
+                                <p>Daughter of Zeus and Demeter, Persephone was abducted by Hades to be his queen. A deal was struck allowing her to return to the surface for part of the year, coinciding with the spring and summer seasons. Her return from the underworld symbolizes rebirth and the renewal of life after winter.</p>
+                                <p>She represents both the innocent maiden (Kore) and the formidable Queen of the Dead, ruling alongside Hades.</p>
+                                <p><strong>Symbols:</strong> Pomegranate, seeds of grain, torch, flowers (especially narcissus and poppy), deer.</p>
+                                <p><strong>Roman Counterpart:</strong> Proserpina</p>
+                                <p><strong>Family:</strong> Daughter of Zeus and Demeter; wife of Hades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godDionysusModal" tabindex="-1" aria-labelledby="godDionysusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godDionysusModalLabel">Dionysus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/god_dionysus.jpg" class="img-fluid rounded mb-3" alt="Dionysus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of Wine, Grapes, Fertility, Festivity, Ritual Madness, Religious Ecstasy, Theatre</h6>
+                                <p>Son of Zeus and the mortal Semele, Dionysus had a tumultuous birth and upbringing. He wandered the world teaching the art of winemaking, often accompanied by wild female followers (Maenads) and satyrs. His worship involved ecstatic rituals, liberation, and sometimes frenzy.</p>
+                                <p>He represents the intoxicating power of nature, irrationality, and the transformative power of altered states. He is sometimes included among the Twelve Olympians, often replacing Hestia.</p>
+                                <p><strong>Symbols:</strong> Thyrsus (pinecone-tipped staff), grapevine, ivy, drinking cup (kantharos), panther, leopard, tiger, donkey.</p>
+                                <p><strong>Roman Counterpart:</strong> Bacchus</p>
+                                <p><strong>Family:</strong> Son of Zeus and Semele.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godDemeterModal" tabindex="-1" aria-labelledby="godDemeterModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godDemeterModalLabel">Demeter</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="row g-4">
+                             <div class="col-md-5 text-center">
+                                <img src="assets/images/god_demeter.jpg" class="img-fluid rounded mb-3" alt="Demeter">
+                             </div>
+                             <div class="col-md-7">
+                                <h6>Goddess of the Harvest, Agriculture, Grain, Fertility, Sacred Law</h6>
+                                <p>Sister of Zeus, Demeter presided over the earth's crops and fertility. Her most famous myth involves her desperate search for her daughter Persephone, abducted by Hades. During her grief, she caused the earth to become barren (winter), only restoring its fertility when Persephone was allowed to return for part of the year.</p>
+                                <p>She was central to the Eleusinian Mysteries, secret religious rites promising initiates a blessed afterlife.</p>
+                                <p><strong>Symbols:</strong> Wheat sheaves, cornucopia, torch, poppy, pig, snake.</p>
+                                <p><strong>Roman Counterpart:</strong> Ceres</p>
+                                <p><strong>Family:</strong> Daughter of Cronus and Rhea; sister of Zeus, Hera, Hestia, Poseidon, Hades; mother of Persephone (by Zeus).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="godPanModal" tabindex="-1" aria-labelledby="godPanModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="godPanModalLabel">Pan</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/god_pan.jpg" class="img-fluid rounded mb-3" alt="Pan">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of the Wild, Shepherds, Flocks, Nature of Mountains, Rustic Music, Impromptus, Fertility</h6>
+                                <p>Often depicted with the hindquarters, legs, and horns of a goat, Pan presided over the wild, pastoral landscapes. Son of Hermes (usually), he was associated with shepherds and their flocks, hunting, and rustic music played on his invention, the pan pipes (syrinx).</p>
+                                <p>He had a lustful nature and was known for chasing nymphs. The word "panic" derives from the sudden, irrational fear attributed to his presence.</p>
+                                <p><strong>Symbols:</strong> Pan pipes (syrinx), goat, fir tree.</p>
+                                <p><strong>Roman Counterpart:</strong> Faunus</p>
+                                <p><strong>Family:</strong> Son of Hermes and a nymph (often Dryope).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="subscription-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 text-center">
+                        <h2 class="h4 mb-3">Stay Enchanted</h2>
+                        <p class="text-muted mb-4">Subscribe to receive updates on new myths, artifacts, and legendary tales!</p>
+                        <form id="subscriptionForm" role="form" aria-label="Email Subscription Form">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control subscribe-input" placeholder="Enter your email" aria-label="Email Address" id="subscribeEmail" required>
+                                <button class="btn btn-outline-light subscribe-button" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                        <div id="subscriptionFeedback" class="small text-muted" style="display: none;">Thank you for subscribing!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer pt-4 pb-3">
+           <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Enchanted Realms</h5>
+                        <p class="small text-muted">Dive into the timeless tales of gods, heroes, and monsters from ancient Greece.</p>
+                        <p class="mb-0 small text-muted">© <span id="current-year"></span> Enchanted Realms. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Quick Links</h5>
+                         <ul class="list-unstyled footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="olympians.html">Olympians</a></li>
+                            <li><a href="titans.html">Titans</a></li>
+                            <li><a href="gods.html">Greek Gods</a></li>
+                            <li><a href="artifacts.html">Artifacts</a></li>
+                             <li><a href="stories.html">Stories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Connect</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Legal</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+                <p class="text-center small text-muted mb-0">Explore the myths | Learn the legends</p>
+           </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+        <script src="scripts.js" defer></script>
+    </body>
+</html>

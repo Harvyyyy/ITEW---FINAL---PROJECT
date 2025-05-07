@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Greek Deities - Mythological Pantheon</title>
+    
+        <meta name="description" content="Discover the pantheon of Greek deities, categorized into Olympians, Titans, Primordial Deities, Underworld Deities, and Nature Deities.">
+        <meta property="og:title" content="Greek Deities - Mythological Pantheon">
+        <meta property="og:description" content="Explore the diverse Greek deities, from Olympian gods to primordial forces, underworld guardians, and nature spirits.">
+        <meta property="og:image" content="assets/images/greek-deities-og.jpg">
+        <meta property="og:url" content="YOUR_WEBSITE_URL/deities.html">
+        <meta property="og:type" content="article">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark site-header fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="Enchanted Realm Logo" class="logo-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="olympians.html">Olympians</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="titans.html">Titans</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="gods.html">Gods</a> </li>
+                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="deities.html">Deities</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="artifacts.html">Artifacts</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="stories.html">Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="page-content deities-page">
+            <div class="container">
+                <h1 class="page-title text-center display-4 mb-4">Greek Deities</h1>
+                <p class="lead text-center mb-5 page-intro">Explore the rich pantheon of Greek mythology, organized into Olympians, Titans, Primordial Deities, Underworld Deities, and Nature Deities, each with unique roles and stories.</p>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 col-md-10">
+                        <form class="search-form" role="search" id="deitySearchForm">
+                            <div class="input-group">
+                                <input type="search" class="form-control search-input" placeholder="Search for a Deity..." aria-label="Search Deities" id="deitySearchInput">
+                                <button class="btn btn-outline-light search-button" type="submit">Search</button>
+                            </div>
+                        </form>
+                        <div id="searchFeedbackDeities" class="text-center small text-muted mt-2" style="display: none;">No results found.</div>
+                    </div>
+                </div>
+                
+                <section class="deities-section">
+                    
+                    <ul class="nav nav-tabs justify-content-center mb-4" id="deitiesTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="olympians-tab" data-bs-toggle="tab" data-bs-target="#olympians" type="button" role="tab" aria-controls="olympians" aria-selected="true">Olympian Gods</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="titans-tab" data-bs-toggle="tab" data-bs-target="#titans" type="button" role="tab" aria-controls="titans" aria-selected="false">Titans</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="primordial-tab" data-bs-toggle="tab" data-bs-target="#primordial" type="button" role="tab" aria-controls="primordial" aria-selected="false">Primordial Deities</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="underworld-tab" data-bs-toggle="tab" data-bs-target="#underworld" type="button" role="tab" aria-controls="underworld" aria-selected="false">Underworld Deities</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nature-tab" data-bs-toggle="tab" data-bs-target="#nature" type="button" role="tab" aria-controls="nature" aria-selected="false">Nature Deities</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="deitiesTabContent">
+                        <div class="tab-pane fade show active" id="olympians" role="tabpanel" aria-labelledby="olympians-tab">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Zeus">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityZeusModal">
+                                        <img src="https://i.pinimg.com/736x/35/09/cc/3509ccaf49f7181c1e757c76165c6d57.jpg" class="card-img-top" alt="Zeus - King of the Gods">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zeus</h5>
+                                            <p class="card-text small">King of the Gods</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Athena">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityAthenaModal">
+                                        <img src="https://i.pinimg.com/736x/ea/bd/e1/eabde1ad12243157c454641df7df2cc6.jpg" class="card-img-top" alt="Athena - Goddess of Wisdom">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Athena</h5>
+                                            <p class="card-text small">Goddess of Wisdom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="titans" role="tabpanel" aria-labelledby="titans-tab">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Cronus">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityCronusModal">
+                                        <img src="assets/images/deity_cronus.jpg" class="card-img-top" alt="Cronus - Titan of Time">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cronus</h5>
+                                            <p class="card-text small">Titan of Time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Rhea">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityRheaModal">
+                                        <img src="assets/images/deity_rhea.jpg" class="card-img-top" alt="Rhea - Titaness of Fertility">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Rhea</h5>
+                                            <p class="card-text small">Titaness of Fertility</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="primordial" role="tabpanel" aria-labelledby="primordial-tab">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Gaia">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityGaiaModal">
+                                        <img src="assets/images/deity_gaia.jpg" class="card-img-top" alt="Gaia - Mother Earth">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gaia</h5>
+                                            <p class="card-text small">Mother Earth</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Uranus">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityUranusModal">
+                                        <img src="assets/images/deity_uranus.jpg" class="card-img-top" alt="Uranus - Sky God">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Uranus</h5>
+                                            <p class="card-text small">Sky God</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="underworld" role="tabpanel" aria-labelledby="underworld-tab">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Hades">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityHadesModal">
+                                        <img src="https://i.pinimg.com/736x/04/29/02/0429020bb4263964916183e3da873001.jpg" class="card-img-top" alt="Hades - God of the Underworld">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hades</h5>
+                                            <p class="card-text small">God of the Underworld</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Thanatos">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityThanatosModal">
+                                        <img src="assets/images/deity_thanatos.jpg" class="card-img-top" alt="Thanatos - God of Death">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Thanatos</h5>
+                                            <p class="card-text small">God of Death</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nature" role="tabpanel" aria-labelledby="nature-tab">
+                            <div class="row g-4">
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Pan">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityPanModal">
+                                        <img src="assets/images/deity_pan.jpg" class="card-img-top" alt="Pan - God of the Wild">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pan</h5>
+                                            <p class="card-text small">God of the Wild</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 god-grid-item" data-name="Nereus">
+                                    <div class="card myth-card" data-bs-toggle="modal" data-bs-target="#deityNereusModal">
+                                        <img src="assets/images/deity_nereus.jpg" class="card-img-top" alt="Nereus - Old Man of the Sea">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nereus</h5>
+                                            <p class="card-text small">Old Man of the Sea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="modal fade" id="deityZeusModal" tabindex="-1" aria-labelledby="deityZeusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityZeusModalLabel">Zeus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/35/09/cc/3509ccaf49f7181c1e757c76165c6d57.jpg" class="img-fluid rounded mb-3" alt="Zeus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>King of the Gods, God of Sky, Thunder, Lightning, Law, Order, Justice</h6>
+                                <p>Zeus, the supreme ruler of Olympus, led his siblings to overthrow the Titans. He wields the thunderbolt and governs divine law, but his numerous affairs often sparked conflicts.</p>
+                                <p><strong>Symbols:</strong> Thunderbolt, eagle, oak tree, bull, scales, scepter.</p>
+                                <p><strong>Roman Counterpart:</strong> Jupiter</p>
+                                <p><strong>Family:</strong> Son of Cronus and Rhea; husband to Hera; father of many gods and heroes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityAthenaModal" tabindex="-1" aria-labelledby="deityAthenaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityAthenaModalLabel">Athena</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/ea/bd/e1/eabde1ad12243157c454641df7df2cc6.jpg" class="img-fluid rounded mb-3" alt="Athena">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Goddess of Wisdom, Strategy, Warfare, Crafts</h6>
+                                <p>Born from Zeus's forehead, Athena is the patron of Athens, known for her strategic prowess and patronage of crafts like weaving.</p>
+                                <p><strong>Symbols:</strong> Owl, olive tree, snake, Aegis, armor, spear.</p>
+                                <p><strong>Roman Counterpart:</strong> Minerva</p>
+                                <p><strong>Family:</strong> Daughter of Zeus and Metis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityCronusModal" tabindex="-1" aria-labelledby="deityCronusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityCronusModalLabel">Cronus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_cronus.jpg" class="img-fluid rounded mb-3" alt="Cronus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Titan of Time, Harvest</h6>
+                                <p>Cronus overthrew his father Uranus and ruled during the Golden Age. He was later deposed by his son Zeus.</p>
+                                <p><strong>Symbols:</strong> Sickle, grain, scythe.</p>
+                                <p><strong>Roman Counterpart:</strong> Saturn</p>
+                                <p><strong>Family:</strong> Son of Uranus and Gaia; husband of Rhea; father of Zeus, Hera, Poseidon, Hades, Hestia, Demeter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityRheaModal" tabindex="-1" aria-labelledby="deityRheaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityRheaModalLabel">Rhea</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_rhea.jpg" class="img-fluid rounded mb-3" alt="Rhea">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Titaness of Fertility, Motherhood, Generation</h6>
+                                <p>Rhea, the mother of the Olympian gods, saved Zeus from Cronus by hiding him and tricking her husband.</p>
+                                <p><strong>Symbols:</strong> Lion, drum, crown, cornucopia.</p>
+                                <p><strong>Roman Counterpart:</strong> Ops</p>
+                                <p><strong>Family:</strong> Daughter of Uranus and Gaia; wife of Cronus; mother of Zeus, Hera, Poseidon, Hades, Hestia, Demeter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityGaiaModal" tabindex="-1" aria-labelledby="deityGaiaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityGaiaModalLabel">Gaia</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_gaia.jpg" class="img-fluid rounded mb-3" alt="Gaia">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Primordial Goddess of the Earth</h6>
+                                <p>Gaia, the ancestral mother of all life, gave birth to the Titans and other primordial beings, shaping the cosmos.</p>
+                                <p><strong>Symbols:</strong> Earth, fruit, grain, mountains.</p>
+                                <p><strong>Roman Counterpart:</strong> Terra</p>
+                                <p><strong>Family:</strong> Mother of Uranus, Pontus, Titans, and others; wife of Uranus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityUranusModal" tabindex="-1" aria-labelledby="deityUranusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityUranusModalLabel">Uranus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_uranus.jpg" class="img-fluid rounded mb-3" alt="Uranus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Primordial God of the Sky</h6>
+                                <p>Uranus, the sky god, was the first ruler of the cosmos until overthrown by his son Cronus at Gaia's urging.</p>
+                                <p><strong>Symbols:</strong> Sky, stars, heavens.</p>
+                                <p><strong>Roman Counterpart:</strong> Caelus</p>
+                                <p><strong>Family:</strong> Son and husband of Gaia; father of Titans, Cyclopes, Hecatoncheires.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityHadesModal" tabindex="-1" aria-labelledby="deityHadesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityHadesModalLabel">Hades</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="https://i.pinimg.com/736x/04/29/02/0429020bb4263964916183e3da873001.jpg" class="img-fluid rounded mb-3" alt="Hades">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of the Underworld, the Dead, Riches</h6>
+                                <p>Hades rules the underworld, overseeing the dead. Known for abducting Persephone, he is just but stern.</p>
+                                <p><strong>Symbols:</strong> Cerberus, Helm of Darkness, cypress, narcissus, key, bident.</p>
+                                <p><strong>Roman Counterpart:</strong> Pluto</p>
+                                <p><strong>Family:</strong> Son of Cronus and Rhea; husband of Persephone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityThanatosModal" tabindex="-1" aria-labelledby="deityThanatosModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityThanatosModalLabel">Thanatos</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_thanatos.jpg" class="img-fluid rounded mb-3" alt="Thanatos">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of Death</h6>
+                                <p>Thanatos personifies peaceful death, guiding souls to the underworld alongside his twin Hypnos.</p>
+                                <p><strong>Symbols:</strong> Butterfly, poppy, sword, inverted torch.</p>
+                                <p><strong>Roman Counterpart:</strong> Mors</p>
+                                <p><strong>Family:</strong> Son of Nyx and Erebus; twin of Hypnos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityPanModal" tabindex="-1" aria-labelledby="deityPanModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityPanModalLabel">Pan</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_pan.jpg" class="img-fluid rounded mb-3" alt="Pan">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>God of the Wild, Shepherds, Flocks, Rustic Music</h6>
+                                <p>Pan, with his goat-like features, roams the wilds, playing his pan pipes and protecting shepherds.</p>
+                                <p><strong>Symbols:</strong> Pan pipes, goat, fir tree.</p>
+                                <p><strong>Roman Counterpart:</strong> Faunus</p>
+                                <p><strong>Family:</strong> Son of Hermes and a nymph.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="deityNereusModal" tabindex="-1" aria-labelledby="deityNereusModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deityNereusModalLabel">Nereus</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/images/deity_nereus.jpg" class="img-fluid rounded mb-3" alt="Nereus">
+                            </div>
+                            <div class="col-md-7">
+                                <h6>Old Man of the Sea</h6>
+                                <p>Nereus, a wise sea god, is known for his truthfulness and shapeshifting, fathering the Nereids.</p>
+                                <p><strong>Symbols:</strong> Fish, trident, seaweed.</p>
+                                <p><strong>Roman Counterpart:</strong> Nereus</p>
+                                <p><strong>Family:</strong> Son of Pontus and Gaia; father of the Nereids.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="subscription-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 text-center">
+                        <h2 class="h4 mb-3">Stay Enchanted</h2>
+                        <p class="text-muted mb-4">Subscribe to receive updates on new myths, artifacts, and legendary tales!</p>
+                        <form id="subscriptionForm" role="form" aria-label="Email Subscription Form">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control subscribe-input" placeholder="Enter your email" aria-label="Email Address" id="subscribeEmail" required>
+                                <button class="btn btn-outline-light subscribe-button" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                        <div id="subscriptionFeedback" class="small text-muted" style="display: none;">Thank you for subscribing!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer pt-4 pb-3">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Enchanted Realms</h5>
+                        <p class="small text-muted">Dive into the timeless tales of gods, heroes, and monsters from ancient Greece.</p>
+                        <p class="mb-0 small text-muted">© <span id="current-year"></span> Enchanted Realms. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Quick Links</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="olympians.html">Olympians</a></li>
+                            <li><a href="titans.html">Titans</a></li>
+                            <li><a href="gods.html">Greek Gods</a></li>
+                            <li><a href="deities.html">Deities</a></li>
+                            <li><a href="artifacts.html">Artifacts</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Connect</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 text-center text-md-start">
+                        <h5 class="footer-heading">Legal</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+                <p class="text-center small text-muted mb-0">Explore the myths | Learn the legends</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+        <script src="scripts.js" defer></script>
+    </body>
+</html>
