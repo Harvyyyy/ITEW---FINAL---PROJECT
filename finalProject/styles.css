@@ -136,6 +136,16 @@ textarea:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 132, 0, 0.35);
 }
 
+.navbar-brand:hover {
+  opacity: 0.6;
+}
+
+.navbar-brand:focus {
+  outline: none;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(5px); 
@@ -459,6 +469,15 @@ textarea:focus {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+.deities-section .nav-link{
+  color: var(--light-color);
+}
+
+.deities-section .nav-link:hover{
+  color: var(--primary-color);
+}
+
+
 .modal-content {
   background-color: #2a2f34;
   color: var(--text-light);
@@ -479,7 +498,6 @@ textarea:focus {
 }
 
 .modal-header .btn-close-white {
-  filter: brightness(1.5) invert(0);
   opacity: 0.8;
 }
 
@@ -591,9 +609,9 @@ textarea:focus {
 }
 
 .subscription-section .subscribe-input {
-  background-color: #ffffff; 
+  background-color: var(--light-color);
   border: 1px solid var(--text-light);
-  color: var(--text-light);
+  color: var(--secondary-color);
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
@@ -606,9 +624,15 @@ textarea:focus {
 }
 
 .subscription-section .subscribe-button:hover {
-  border-color: #000000; 
+  border-color: var(--secondary-color); 
   background-color: var(--text-light); 
-  color: #000000; 
+  color: var(--secondary-color); 
+}
+
+.subscription-section .subscribe-button:focus-visible {
+  border-color: var(--secondary-color);
+  background-color:  var(--text-light);
+  color: var(--secondary-color);
 }
 
 .subscription-section .input-group {
@@ -631,6 +655,8 @@ textarea:focus {
 }
 
 .stories-page .card-body {
+  background: var(--panel-bg);  
+  backdrop-filter: blur(12px);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -658,7 +684,8 @@ textarea:focus {
   display: none;
 }
 
-.stories-page .read-story-btn {
+.stories-page .read-story-btn,
+.custom-btn-primary {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
@@ -670,7 +697,8 @@ textarea:focus {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.stories-page .read-story-btn:hover {
+.stories-page .read-story-btn:hover,
+.custom-btn-primary:hover {
   background-color: var(--link-hover-color);
   transform: scale(1.05);
 }
@@ -788,6 +816,22 @@ textarea:focus {
 .legal-detail-page .back-btn:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
+}
+
+.accordion {
+  --bs-accordion-color: var(--text-light);
+  --bs-accordion-bg: rgba(65, 65, 65, 0.5);
+  --bs-accordion-btn-bg: none;
+  --bs-accordion-active-color: var(--light-color);
+  --bs-accordion-active-bg: var(--primary-color);
+  --bs-accordion-btn-color: var(--text-light);
+  --bs-accordion-border-color: #777777;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 
 @media (min-width: 576px) {
